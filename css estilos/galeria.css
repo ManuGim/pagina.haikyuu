@@ -155,3 +155,23 @@ border-radius: 50%;
   text-decoration: none;
   text-align: center;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+footer img {
+  padding-top: 3rem;
+  width: 100%;
+  height: auto;
+  margin-right: 3%;
+  width: 4rem;
+
+}
+
+.yt{
+  width: 6rem;
+  }
