@@ -16,7 +16,15 @@ header {
     background-color: black;
 
 }
-
+nav {
+    position: relative; 
+    } 
+    
+nav{position: sticky;
+        top: 0;
+        z-index:1; 
+        width:100%;
+}
 nav ul {
     margin-top: 3%;
     font-family: Bookman Old Style;
@@ -32,6 +40,7 @@ nav ul li a {
     padding-right: 3rem;
     padding-top: 1.2rem;
 }
+
 
 a {
     text-decoration: none;
@@ -67,7 +76,7 @@ section {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.secundario h1 {
+ .secundario h1 {
     margin-bottom: 20px;
     margin-top: 20px;
     background-color: darkorange;
@@ -126,6 +135,7 @@ section {
     font-size: 2rem;
 }
 
+
 footer {
     display: flex;
     justify-content: center;
@@ -146,142 +156,23 @@ footer img {
     width: 6rem;
     }
 
-    h1{
-        text-align: center;
-        font-size: 4rem;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-top: 4%;
-        text-decoration: underline;
-        text-shadow: -7px 0 white;
-        padding-bottom: 20px;
-    }
-    
-    .primero p{
-        padding-top: 2px;
-        padding-bottom: 2px;
-        font-size: 1.7rem;
-        color:black;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: rgb(224, 127, 16);
-        border: 7px black solid;
-        margin-bottom: 5%;
-        text-align: left;
-    }
-    
-    .kageyama1 {
-        width: 900px;
-        height: 420px;
-        float: left;
-        border: 3px solid black;
-        position: relative;
-    }
-    .puntaje1{
-        width: 900px;
-        height: 420px;
-        float:right;
-        border: 3px solid black;
-        
-    }
-    
-    .segundo div{
-        font-size: 1.7rem;
-        color:black;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-        padding-top: 26%;
-        padding-bottom: 5px;
-    }
-    .oikawa {
-        width: 800px;
-        align-content: center;
-        margin-top: 3%;
-        margin-bottom: 10%;
-        border: 5px solid black;
-        border-style: double
-    }
-    .nishi1{
-        width: 800px;
-        float: left;
-        border: 5px solid black;
-        margin-top: 3%;
-        margin-bottom: 10%;
-        border-style: double;
-    }
-    .nishi2{
-        width: 800px;
-        border: 5px solid black;
-        border-style: double;
-        margin-top: 3%;
-        margin-bottom: 8%;
-    }
-    
-    .contimg{
-    justify-content: center;
-    padding-left: 30%;
-    
-    }
-    
-    .imagenes{
-        display: inline-block;
-        padding-left: 30%;
-        list-style-type: none;
-        margin-bottom: 2px;
-    }
-    
-    .tercero p{
-        background-color: rgb(180, 125, 62);
-        padding: 30px;
-        border: 7px solid blanchedalmond;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.7rem;
-        text-align: right;
-    
-    }
-    
-    .armado{
-        border: 7px solid rgb(221, 164, 41) ;
-        border-style: groove;
-        width: 800px;
-        margin-top: 3%;
-        margin-left: 5%;
-        
-    }
-    
-    .bloqueo{
-        float: right;
-        width: 825px;
-        margin-right: 5%;
-        margin-top: 3%;
-        border: 7px solid rgb(221, 164, 41);
-        border-style: groove;
-    }
-    
-    .punto{
-        border: 7px solid rgb(221, 164, 41) ;
-        border-style: groove;
-        width: 800px;
-        margin-top: 3%;
-        margin-left: 5%;
-    
-    }
-    
-    .puntaje2{
-        float: right;
-        width: 825px;
-        margin-right: 5%;
-        margin-top: 3%;
-        border: 7px solid rgb(221, 164, 41);
-        border-style: groove;
-        height: 400px;
-    }
+
+
+    .icon{display: none;}
 
     @media screen and (max-width: 768px) {
         nav ul { display: none; }
-        .icon { float: right; display: block;  }
-        }
         
-    .icon{ 
-        display: none;
+        .icon { float: right; display: block;
+            padding-right: 6rem;
+            padding-top: 2rem;
+            font-size: 30px;
+        }
     }
+  
+  
+        
 
+      
+        
 
