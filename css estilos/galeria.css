@@ -14,10 +14,26 @@ header {
   padding-bottom: 2%;
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: rgb(114, 111, 111);
 
 }
+#btn-menu{
+  display: none;
+}
+header label{
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  display: none;
+ 
+}
 
+header label:hover{
+  cursor: pointer;
+  background: rgba(0,0,0,.3);
+  
+}
 nav ul {
   margin-top: 3%;
   font-family: Bookman Old Style;
@@ -174,4 +190,38 @@ footer img {
 
 .yt{
   width: 6rem;
+  }
+  @media (max-width:480px){
+    header label{
+      display: block;
+   }
+   .menu{
+      position: absolute;
+      background-color: gray;
+      width: 70%;
+      margin-left: -100%;
+      transition: all 0.5s;
+   }
+   #btn-menu:checked ~ .menu {
+      margin: 0;
+   }
+   .menu ul{
+      flex-direction: column;
+   }
+   .menu li{
+      border-top: 1px solid white;
+   }
+   .menu ul li{
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+   }
+    footer img {
+      padding-top: 3rem;
+      width: 100%;
+      height: auto;
+      margin-right: 3%;
+      width: 4rem;
+  margin-left: 1rem;}
   }

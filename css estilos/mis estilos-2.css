@@ -13,10 +13,29 @@ header {
     padding-bottom: 2%;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgb(114, 111, 111);
 
 }
+#btn-menu{
+    display: none;
+}
+header label{
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    display: none;
+   
+}
 
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,.3);
+    
+}
+nav{
+    position: relative;
+}
 nav ul {
     margin-top: 3%;
     font-family: Bookman Old Style;
@@ -32,7 +51,7 @@ nav ul li a {
     padding-right: 3rem;
     padding-top: 1.2rem;
 }
-.icon{display: none;}
+
 a {
     text-decoration: none;
     color:rgb(57, 167, 201)
@@ -189,15 +208,90 @@ footer img {
 .yt{
     width: 6rem;
     }
-
-    @media screen and (max-width: 768px) {
-        nav ul { display: none; }
-        
-       
-
-        .icon { float: right; display: block;
-            padding-right: 6rem;
-            padding-top: 2rem;
-            font-size: 30px;
-        }
+    .menu-icon img{
+        width: 30px;
+        height: 30px;
+    border-radius: 2px;
     }
+    .menu-icon, #check{
+        display: none;
+    }
+
+    @media (max-width:480px){
+        header label{
+            display: block;
+         }
+         .menu{
+            position: absolute;
+            background-color: gray;
+            width: 70%;
+            margin-left: -100%;
+            transition: all 0.5s;
+         }
+         #btn-menu:checked ~ .menu {
+            margin: 0;
+         }
+         .menu ul{
+            flex-direction: column;
+         }
+         .menu li{
+            border-top: 1px solid white;
+         }
+         .menu ul li{
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+         }
+       .primero p{
+        text-align: center;
+       }
+       .kageyama1{
+        width: 430px;
+        margin-left: 2%;
+       }
+       .puntaje1{
+        width: 430px;
+        margin-top: 5%;
+        margin-right: 1.5%;
+        margin-bottom: 14%;
+       }
+       .oikawa {
+            width: 250px;
+         }
+        .nishi1{
+        width: 250px;
+        }
+        .nishi2{
+        width: 250px;
+        }
+.tercero p{
+    text-align: center;
+}
+.armado{
+    width: 400px;
+}
+.bloqueo{
+width: 400px;
+}
+.punto{
+    width: 400px;
+}
+.puntaje2{
+    width: 400px;
+    height: 200px;
+}
+footer {
+    height: 350px;
+padding-left: 10%;
+}
+footer img {
+    padding-top: 3rem;
+    width: 100%;
+    height: auto;
+    margin-right: 3%;
+    width: 4rem;
+margin-left: 1rem;
+}
+    }
+

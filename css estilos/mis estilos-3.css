@@ -13,8 +13,24 @@ header {
     padding-bottom: 2%;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgb(114, 111, 111);
 
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: block;
+    width: 40px;
+    height: 30px;
+    padding: 10px;
+    display: none;
+   
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,.3);
 }
 
 nav ul {
@@ -60,7 +76,7 @@ section{
     background-color: rgb(143, 128, 105);
 }
 .hinata{
-    margin-left: 10%;
+    margin-left: 35%;
     margin-bottom: 3%;
     border: 15px double rgb(8, 8, 8);
 }
@@ -73,7 +89,7 @@ h2{
     border: solid 5px rgb(233, 97, 6);
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 20%;
+    margin-left: 45%;
     width: 100px;
     margin-bottom: 5%;
 }
@@ -81,11 +97,13 @@ h2{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color:black;
     color: white;
-
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 1.5rem;
     
 }
 .kageyama{
-    margin-left: 60%;
+    margin-left: 34%;
     margin-bottom: 3%;
     border: 10px inset rgb(101, 105, 117);
 }
@@ -98,13 +116,21 @@ h3{
     border: solid 5px rgb(7, 29, 99);
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 71%;
+    margin-left: 45%;
     width: 100px;
     margin-bottom: 5%;
 }
+.tobio{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:black;
+    color: white;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 1.5rem;
+}
 
 .oikawa{
-    margin-left: 12%;
+    margin-left: 35%;
     margin-bottom: 3%;
     border: 10px outset rgb(114, 86, 86);
 }
@@ -118,14 +144,21 @@ h4{
     border: solid 5px rgb(13, 172, 150);
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 22.5%;
+    margin-left: 45%;
     width: 100px;
     margin-bottom: 5%;
 }
-
+.toru{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:black;
+    color: white;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 1.5rem;
+}
 .yu{
     width: 350px;
-    margin-left: 49%;
+    margin-left: 36%;
     margin-bottom: 3%;
     border: 10px dashed rgb(167, 90, 39);
 }
@@ -139,11 +172,18 @@ h5{
     border: solid 5px rgb(3, 13, 43);
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 58.5%;
+    margin-left: 45.5%;
     width: 100px;
     margin-bottom: 5%;
 }
-
+.yuu{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:black;
+    color: white;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 1.5rem;
+}
 
 footer {
     display: flex;
@@ -163,12 +203,68 @@ footer img {
 .yt{
 width: 6rem;
 }
-@media screen and (max-width: 768px) {
-    nav ul { display: none; }
-    
-    .icon { float: right; display: block;
-        padding-right: 6rem;
-        padding-top: 2rem;
-        font-size: 30px;
-    }
+@media (max-width:480px){
+    header label{
+        display: block;
+     }
+     .menu{
+        position: absolute;
+        background-color: gray;
+        width: 70%;
+        margin-left: -100%;
+        transition: all 0.5s;
+     }
+     #btn-menu:checked ~ .menu {
+        margin: 0;
+     }
+     .menu ul{
+        flex-direction: column;
+     }
+     .menu li{
+        border-top: 1px solid white;
+     }
+     .menu ul li{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+     }
+    section{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+}
+.hinata{
+    margin-left: 8%;
+}
+h2{
+    margin-left: 40%;
+}
+.kageyama{
+    margin-left: 3%;
+}
+h3{
+    margin-left: 39%;
+}
+.oikawa{
+    margin-left: 4%;
+}
+h4{
+    margin-left: 39%;
+}
+.yu{
+    margin-left: 10%;
+}
+h5{
+    margin-left: 40%;
+}
+}
+
+footer img {
+    padding-top: 3rem;
+    width: 100%;
+    height: auto;
+    margin-right: 3%;
+    width: 4rem;
+margin-left: 2rem;
 }
