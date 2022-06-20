@@ -136,7 +136,7 @@ button:hover{
     width: 320px;
     padding: 16px 4px 16px 0;
     border-radius: 6px;
-    font-size: 13px;
+    font-size: 12px;
     box-shadow: 10px 10px 40px -14px #000;
     margin-top: 30%;
 
@@ -165,6 +165,9 @@ footer img {
 
 .yt{
     width: 6rem;
+    }
+    .menu-icon, #check{
+        display: none;
     }
     @media (max-width:480px){
         header label{
